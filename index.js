@@ -313,8 +313,6 @@ const Swipeout = React.createClass({
           style={styleContent}
           onLayout={this._onLayout}
           {...this._panResponder.panHandlers}
-          onStartShouldSetResponderCapture={() => (this.state.openedLeft || this.state.openedRight)}
-          onMoveShouldSetResponderCapture={() => true}
         >
           {this.props.children}
         </View>
